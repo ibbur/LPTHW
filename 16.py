@@ -28,6 +28,8 @@ line3 = raw_input("Line 3: ")
 
 print "I'm going to write these to the file."
 
+    # This writes the content to a variable for each of the three lines and...
+    # jumps to a fresh line to right the next line of text.
 target.write(line1)
 target.write("\n")
 target.write(line2)
