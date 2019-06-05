@@ -9,9 +9,15 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
+    # The file is opened and made writable. The 'w' string also truncates...
+    # the file making the origianl truncate line below unessesary.
+    # Files are automatically opened in read mode. So, the 'w' argument is...
+    # nessesary for writing to the file.
 target = open(filename, 'w')
 
 print "Truncating the file. Goodbye!"
+    # Truncate is redundant here. The 'w' string above does this in addition to
+    # making the file writable.
 target.truncate()
 
 print "Now I'm going to ask you for three lines."
