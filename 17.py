@@ -24,6 +24,8 @@ indata = in_file.read()
     #Get the length of the string that you passed and returns that as a number.
 print "The input is %d bytes long" % len(indata)
 
+    #len gets the length of the file 
+
 print "Does this file exist? %r" % exists(to_file)
 print "Read, hit RETURN to continue, CTRL-C to abort."
 raw_input()
